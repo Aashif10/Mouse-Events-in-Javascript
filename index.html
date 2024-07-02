@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Right Click Example</title>
+<style>
+    #myElement {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        text-align: center;
+        line-height: 200px;
+    }
+</style>
+</head>
+<body>
+
+<div id="myElement">Right-click me</div>
+
+<script>
+document.getElementById("myElement").addEventListener("contextmenu", function(event) {
+    event.preventDefault(); // Prevents the default right-click context menu
+    myElement.style.backgroundColor="green";
+});
+</script>
+
+</body>
+</html>
